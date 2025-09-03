@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "icon": "FaUsers",
+    "number": 500,
+    "suffix": "+",
+    "label": "Students Trained"
+  },
+  {
+    "id": 2,
+    "icon": "FaBookOpen",
+    "number": 4,
+    "suffix": "",
+    "label": "Programs Offered"
+  },
+  {
+    "id": 3,
+    "icon": "FaAward",
+    "number": 10,
+    "suffix": "+",
+    "label": "Years of Experience"
+  },
+  {
+    "id": 4,
+    "icon": "FaStar",
+    "number": 95,
+    "suffix": "%",
+    "label": "Success Rate"
+  }
+]    
