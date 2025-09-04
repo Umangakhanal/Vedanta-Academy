@@ -54,7 +54,10 @@ const Home = () => {
           </div>
           <div className={Styles.data}>
         <h2>
-          <CountUp end={stat.number} duration={2}/>
+          <CountUp end={stat.number} duration={2}
+          enableScrollSpy
+          scrollSpyOnce
+          />
           {stat.suffix}</h2>
           <p>{stat.label}</p>
           </div>
