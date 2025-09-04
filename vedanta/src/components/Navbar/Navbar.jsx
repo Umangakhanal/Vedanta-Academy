@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
@@ -9,10 +10,54 @@ const Navbar = () => {
         </div>
         <div className={Styles.navlinks}>
           <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Programs</li>
-            <li>Contact</li>
+            <li>
+              {" "}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
+                }
+                to="/"
+              >
+                {" "}
+                Home{" "}
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
+                }
+                to="/about"
+              >
+                {" "}
+                About{" "}
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
+                }
+                to="/programs"
+              >
+                {" "}
+                Programs{" "}
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
+                }
+                to="/contact"
+              >
+                {" "}
+                Contact{" "}
+              </NavLink>
+            </li>
           </ul>
         </div>
         <div className={Styles.navButton}>
