@@ -6,7 +6,7 @@ const Navbar = () => {
     <>
       <nav className={Styles.Navbar}>
         <div className={Styles.logo}>
-          <img src="LOGO.jpg" alt="Vedanta Academy" />
+          <img src="LOGO.png" alt="Vedanta Academy" />
         </div>
         <div className={Styles.navlinks}>
           <ul>

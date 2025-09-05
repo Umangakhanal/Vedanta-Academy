@@ -52,11 +52,12 @@ const Footer = () => {
                 </div>
                 <div className={Styles.contact}>
                     <FaMapMarkerAlt size={16} color="var(--color-secondary)"/>
-                    <p>M9F6+X2W, Madhyapur Thimi 44600</p>
+                    <p>M9F6+X2W,Madhyapur Thimi</p>
                 </div>
             </div>
           </div>
         </div>
+       <div className={Styles.line}></div>
         <div className={Styles.bottom}>
             <p>© 2025 Vedanta Academy. All rights reserved.</p>
         </div>
