@@ -114,6 +114,7 @@ padding-left: 40px;
 .btn2:hover{
     background-color: var(--color-custom);
     transform: scale(1.05);
+    color: var(--color-primaryg);
 }
 .cardContainer{
     display: flex;
