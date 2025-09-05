@@ -22,10 +22,10 @@
     color: var(--color-secondary);
 }
 .textcontainer h1{
-    font-size:48px;
-    font-weight: 800;
+    /* font-size:48px;
+    font-weight: 800; */
     color: var(--color-custom);
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .textcontainer{
     padding: 40px;
@@ -35,9 +35,9 @@
     width: 45%;
 }
 .textcontainer p{
-    font-size: 24px;
+    /* font-size: 24px;
     font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
     color: var(--color-custom);
 }
 .card{
@@ -54,9 +54,9 @@
 }
 .card h3{
     margin-top: 20px;
-    font-size: xx-large;
+    /* font-size: xx-large;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
     color: var(--color-custom);
 
 
@@ -68,10 +68,10 @@
 }
 .card li{
     color: var(--color-custom);
-    font-size: 24px;
-    font-weight: 300;
+    /* font-size: 24px;
+    font-weight: 300; */
     list-style:none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 .buttons{
 width: 400px;
@@ -89,9 +89,9 @@ padding-left: 40px;
     border-radius: 5px;
     background-color: var(--color-secondary);
     color: var(--color-custom);
-    font-size: 16px;
+    /* font-size: 16px;
     font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
     cursor: pointer;
     transition: 0.3s;
 
@@ -103,9 +103,9 @@ padding-left: 40px;
     width: 120px;
     height: 90%;
     border-radius: 5px;
-    font-size: 16px;
+    /* font-size: 16px;
     font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; */
     background-color: transparent;
     border: 1px solid var(--color-custom);
     cursor: pointer;
@@ -158,4 +158,43 @@ padding-left: 40px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--color-text) ;
+}
+.program{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    align-items: center;
+}
+.text{
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+/* .text h2{
+    font-size: 38px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+.text p{
+    /* font-size: 24px;
+    font-weight: 300;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; */
+    text-align:center;
+}
+
+button{
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-custom);
+    cursor: pointer;
+    transition: 0.3s;
 }

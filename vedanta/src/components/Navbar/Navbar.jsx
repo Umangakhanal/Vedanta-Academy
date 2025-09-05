@@ -61,7 +61,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className={Styles.navButton}>
-          <button>Sign in </button>
+          <button className={Styles.button}>Sign in </button>
         </div>
       </nav>
     </>
