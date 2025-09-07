@@ -1,6 +1,10 @@
+@import './../../index.css';
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  padding-top: 80px;
 }
 .Navbar {
   width: 100%;
@@ -9,6 +13,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 .logo {
   width: 85px;
@@ -32,23 +41,22 @@
   justify-content: space-evenly;
   list-style: none;
   gap: 30px;
-  
 }
 
-.navlinks a{
-    text-decoration: none;
-    /* font-size: 16px;
+.navlinks a {
+  text-decoration: none;
+  /* font-size: 16px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif; */
-    /* color: var(--color-text); */
+  /* color: var(--color-text); */
 }
-.link{
-    color: var(--color-text);
-    text-decoration: none;
+.link {
+  color: var(--color-text);
+  text-decoration: none;
 }
-.activeLink{
-    color: var(--color-primary);
-    text-decoration: underline !important;
+.activeLink {
+  color: var(--color-primary);
+  text-decoration: underline !important;
 }
 
 .navButton {
@@ -59,19 +67,19 @@
   justify-content: center;
   align-items: center;
 }
-.button{
-    width: 100px;
-    height: 90%;
-    border-radius: 5px;
-    /* font-size: 16px;
+.button {
+  width: 100px;
+  height: 90%;
+  border-radius: 5px;
+  /* font-size: 16px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif; */
-    background-color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    color: var(--color-custom);
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-custom);
+  cursor: pointer;
+  transition: 0.3s;
 }
-button:hover{
-    transform: scale(1.05);
+button:hover {
+  transform: scale(1.05);
 }

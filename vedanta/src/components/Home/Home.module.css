@@ -198,3 +198,9 @@ button{
     cursor: pointer;
     transition: 0.3s;
 }
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 1.5rem; /* space between cards */
+  padding: 1rem;
+}
