@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "Handwriting Improvement",
+    "shortDesc": "Master neat, legible, and speedy handwriting for all ages.",
+    "fullDesc": "This comprehensive program focuses on foundational strokes, proper letter formation, spacing, and posture. Participants will engage in targeted drills and exercises designed to enhance legibility and writing speed, leading to significant improvements in handwriting quality. Ideal for students and adults alike.",
+    "duration": "4 weeks",
+    "image": "https://via.placeholder.com/300x180?text=Handwriting"
+  },
+  {
+    "id": 2,
+    "title": "Public Speaking",
+    "shortDesc": "Build confidence and speak effectively in front of any audience.",
+    "fullDesc": "Our public speaking course helps participants overcome stage fear, develop structured content delivery, and improve body language and voice modulation. Through practical sessions and guided practice, learners gain confidence to present their ideas clearly and persuasively.",
+    "duration": "6 weeks",
+    "image": "https://via.placeholder.com/300x180?text=Public+Speaking"
+  },
+  {
+    "id": 3,
+    "title": "Creative Writing",
+    "shortDesc": "Unleash your imagination through storytelling and writing skills.",
+    "fullDesc": "This program nurtures creative expression through structured writing activities, storytelling techniques, and exercises in poetry, short stories, and essays. It builds vocabulary, enhances grammar, and encourages original thinking — helping learners discover their unique writing style.",
+    "duration": "5 weeks",
+    "image": "https://via.placeholder.com/300x180?text=Creative+Writing"
+  },
+  {
+    "id": 4,
+    "title": "EduVake",
+    "shortDesc": "Enhance academic skills with innovative learning methods.",
+    "fullDesc": "EduVake is designed to boost students' learning efficiency through interactive methods, problem-solving exercises, and skill-building activities. It encourages creative thinking and prepares learners to excel in academics and beyond.",
+    "duration": "8 weeks",
+    "image": "https://via.placeholder.com/300x180?text=EduVake"
+  }
+]
