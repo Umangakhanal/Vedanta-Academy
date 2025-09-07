@@ -2,6 +2,7 @@ import Styles from "./Home.module.css";
 import CountUp from "react-countup";
 import { useEffect, useState } from "react";
 import { FaUsers, FaBookOpen, FaAward, FaStar } from "react-icons/fa";
+import Card from "../Card/Card";
 const Home = () => {
   const iconMap = {
     FaUsers: <FaUsers size={30} color="var(--color-custom)" />,
@@ -17,6 +18,13 @@ const Home = () => {
       .then((data) => setStats(data));
   }, []);
 
+  const [programs, setPrograms]=useState([]);
+  useEffect(()=>{
+    fetch("https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Program.json")
+    .then(res => res.json())
+    .then(data => setPrograms(data))
+    .catch(err => console.log(err));
+  },[]);
   return (
     <>
       <div className={Styles.main}>
@@ -74,7 +82,19 @@ const Home = () => {
             enhance your skills and unlock your potential.
           </p>
         </div>
-        <div className={Styles.cards}>
+        <div className={Styles.cardsContainer}>
+          {programs.map(program =>(
+            <Card 
+            key={program.id}
+            title={program.title}
+            shortDesc={program.shortDesc}
+            fullDesc={program.fullDesc}
+            duration={program.duration}
+            image={program.image}
+            showFull={false}
+            buttonText={"Enroll Now"}
+            />
+          ))}
 
         </div>
         <button>View All Programs &#10140;</button>
