@@ -4,11 +4,11 @@
   padding: 0;
 }
 body {
-  padding-top: 80px;
+  padding-top: 70px;
 }
 .Navbar {
   width: 100%;
-  height: 90px;
+  height: 70px;
   background-color: var(--color-custom);
   display: flex;
   align-items: center;
@@ -21,7 +21,7 @@ body {
 }
 .logo {
   width: 85px;
-  height: 80px;
+  height: 70px;
   /* border-radius: 50%; */
   margin-left: 15px;
 }
