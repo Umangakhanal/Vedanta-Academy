@@ -92,7 +92,7 @@ const Home = () => {
             duration={program.duration}
             image={program.image}
             showFull={false}
-            buttonText={"Enroll Now"}
+            buttonText={<span>Learn more &#10140; </span>}
             />
           ))}
 
