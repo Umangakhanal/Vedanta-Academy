@@ -8,12 +8,12 @@ import {
   FaClock,
 } from "react-icons/fa";
 const Program = () => {
-  const iconMap = {
-    FaUserFriends: <FaUserFriends size={30} />,
-    FaBullseye: <FaBullseye size={30} />,
-    FaCheckCircle: <FaCheckCircle size={30} />,
-    FaClock: <FaClock size={30} />,
-  };
+  const iconMap = [
+    { icon: <FaUserFriends size={30} />,  title: "Supportive Community", desc: "Learn in a friendly and collaborative environment." },
+    { icon: <FaBullseye size={30} />, title: "Focused Learning", desc: "Structured lessons designed for measurable results." },
+    { icon: <FaCheckCircle size={30} />,title: "Proven  Methods", desc: "Trusted teaching methods for skill-building." },
+    { icon: <FaClock size={30} />, title: "Flexible Schedule", desc: "Study at a pace that works for you."  },
+  ];
   const [programs, setPrograms] = useState([]);
   useEffect(() => {
     fetch(
@@ -71,14 +71,16 @@ const Program = () => {
           </p>
         </div>
         <div className={Styles.infoCardContainer}>
-          {Object.keys(iconMap).map((key, index)=>(
-            <div className={Styles.infoCard} key={index}>
-              <div className={`${Styles.icon} ${Styles[`icon${index +1}`]}`} >
-                {iconMap[key]}              
+          {iconMap.map((item, index)=>(
+            <div className={Styles.infoCard}  key={index}>
+              <div className={`${Styles.icon} ${Styles[`icon${index+1}`]}`}>
+                {item.icon}
                 </div>
-                
-                </div>
+                <h4>{item.title}</h4>
+                <p>{item.desc} </p>
+            </div>
           ))}
+  
         </div>
       </div>
     </>
