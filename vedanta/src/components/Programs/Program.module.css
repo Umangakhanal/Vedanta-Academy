@@ -5,7 +5,6 @@
 .main {
   margin-top: 20px;
   height: 350px;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: var(--color-primary);
@@ -13,7 +12,6 @@
 }
 .textcontainer {
   text-align: center;
-  border: 1px solid green;
   color: var(--color-custom);
   width: 650px;
   display: flex;
@@ -21,12 +19,14 @@
   gap: 20px;
 }
 .programDescription {
+  background-color: var(--color-accent);
   display: flex;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+  padding-bottom: 50px;
 }
 .programDescription h3 {
   color: var(--color-primary);
@@ -39,4 +39,34 @@
   grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 1.5rem; /* space between cards */
   padding: 1rem;
+  margin-left:20px;
+  margin-right:20px;
+}
+.choose{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.choose h3{
+  color: var(--color-primary);
+}
+.choose p{
+  color: var(--color-text);
+}
+.infoCardContainer{
+display: flex;
+border: 1px solid red;
+width: 100%;
+justify-content: space-around;
+padding: 5px;
+
+}
+.infoCard{
+  width: 200px;
+  height: 200px;
+  border: 1px solid yellow;
+  display: flex;
+  justify-content: center;
+  
 }
