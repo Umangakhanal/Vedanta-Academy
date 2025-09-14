@@ -160,7 +160,7 @@ padding-left: 40px;
     color: var(--color-text) ;
 }
 .program{
-    border: 1px solid red;
+    
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -174,7 +174,7 @@ padding-left: 40px;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+  
 }
 /* .text h2{
     font-size: 38px;
