@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./About.module.css";
+import {FaBullseye, FaLightbulb } from 'react-icons/fa'
 
 const About = () => {
+    const iconMap={
+        FaBullseye: FaBullseye,
+        FaLightbulb : FaLightbulb
+    };
+    const [cards , setCards]=useState([]);
+    useEffect(()=>{
+        fetch("https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/MissionVision")
+        .then((res)=> res.json())
+        .then((data)=> setCards(data))
+        .catch((err)=> console.error(err));
+    }, []);
   return (
     <>
       <div className={Styles.heroContainer}>
@@ -33,6 +45,21 @@ const About = () => {
             alt="Vedanta Academy"
           />
         </div>
+      </div>
+      <div className={Styles.cardsContainer}>
+        {cards.map((item)=>{
+            const IconComponent = iconMap[item.icon];
+            return(
+                <div key={item.id} className={Styles.card}>
+                    <div className={Styles.iconCircle}>
+                        <IconComponent color={item.iconColor} size={30}/>
+                        
+                    </div>
+                    <h3>{item.title}</h3>
+                    <p style={{paddingLeft:10,paddingRight:10}} >{item.content}</p>
+                </div>
+            )
+        })}
       </div>
     </>
   );
