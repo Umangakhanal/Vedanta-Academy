@@ -3,7 +3,9 @@ import CountUp from "react-countup";
 import { useEffect, useState } from "react";
 import { FaUsers, FaBookOpen, FaAward, FaStar } from "react-icons/fa";
 import Card from "../Card/Card";
+import {useNavigate} from 'react-router-dom' 
 const Home = () => {
+  const navigate =useNavigate();
   const iconMap = {
     FaUsers: <FaUsers size={30} color="var(--color-custom)" />,
     FaBookOpen: <FaBookOpen size={30} color="var(--color-custom)" />,
@@ -13,31 +15,43 @@ const Home = () => {
   const [stats, setStats] = useState([]);
   useEffect(() => {
     fetch(
-"https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Stats.json"    )
+      "https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Stats.json"
+    )
       .then((res) => res.json())
       .then((data) => setStats(data));
   }, []);
 
-  const [programs, setPrograms]=useState([]);
-  useEffect(()=>{
-    fetch("https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Program.json")
-    .then(res => res.json())
-    .then(data => setPrograms(data))
-    .catch(err => console.log(err));
-  },[]);
+  const [programs, setPrograms] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Program.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setPrograms(data))
+      .catch((err) => console.log(err));
+  }, []);
   return (
     <>
       <div className={Styles.main}>
         <div className={Styles.container}>
           <div className={Styles.textcontainer}>
             <h1>
-              Unlock Your
-              <br /> <span>Potential</span> <br /> with Expert Training
+               <span>Vedanta Academy</span>
             </h1>
             <p>
-              Transform your skills with our comprehensive training programs in
-              handwriting, public speaking, creative writing, and innovative
-              learning methodologies.
+              At Vedanta Academy, we believe education goes beyond textbooks.
+              For the past 9+ years, we have been transforming classrooms with
+              our handwriting training programs in both English and
+              Nepali—helping more than 100,000 students and 10,000 teachers
+              across 300+ schools, 16 districts, and 2 countries. Today, we
+              extend our expertise into essential 21st Century Skills—public
+              speaking, creative writing, problem solving, and
+              entrepreneurship—because we believe every student should not only
+              write with clarity but also express creatively, speak with
+              confidence, think critically, and act responsibly. With a team of
+              30 dedicated educators, currently serving 75+ schools, we continue
+              to grow as a trusted partner in education, nurturing skills that
+              truly prepare students for life.
             </p>
           </div>
           <div className={Styles.card}>
@@ -83,21 +97,20 @@ const Home = () => {
           </p>
         </div>
         <div className={Styles.cardsContainer}>
-          {programs.map(program =>(
-            <Card 
-            key={program.id}
-            title={program.title}
-            shortDesc={program.shortDesc}
-            fullDesc={program.fullDesc}
-            duration={program.duration}
-            image={program.image}
-            showFull={false}
-            buttonText={<span>Learn more &#10140; </span>}
+          {programs.map((program) => (
+            <Card
+              key={program.id}
+              title={program.title}
+              shortDesc={program.shortDesc}
+              fullDesc={program.fullDesc}
+              duration={program.duration}
+              image={program.image}
+              showFull={false}
+              buttonText={'Learn More →'}
             />
           ))}
-
         </div>
-        <button>View All Programs &#10140;</button>
+        <button onClick={()=> navigate("/programs")}>View All Programs &#10140;</button>
       </div>
     </>
   );

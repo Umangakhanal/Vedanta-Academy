@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./Card.module.css";
+import { useNavigate } from "react-router-dom";
 const Card = ({
   title,
   shortDesc,
@@ -9,6 +10,18 @@ const Card = ({
   showFull,
   buttonText,
 }) => {
+  const navigate = useNavigate();
+
+   const handleButtonClick =()=>{
+    if (buttonText==="Learn More →")
+    {
+      navigate('/programs');
+    }
+    else if(buttonText==="Enroll Now")
+    {
+      navigate('/contact');
+    }
+  }
   return (
     <div>
       <div className={Styles.card}>
@@ -19,7 +32,7 @@ const Card = ({
           <p className={Styles.duration}>
             <strong>Duration:</strong> {duration}
           </p>
-          <button className={Styles.btn}>{buttonText}</button>
+          <button onClick={handleButtonClick} className={Styles.btn}>{buttonText}</button>
         </div>
       </div>
     </div>
