@@ -2,12 +2,19 @@ import React, { useEffect, useState } from "react";
 import Styles from "./About.module.css";
 import { FaBullseye, FaRegLightbulb } from "react-icons/fa6";
 import CountUp from "react-countup";
+import { FaUsers, FaBookOpen, FaAward,FaStar  } from "react-icons/fa6";
 
 const About = () => {
   const iconMap = {
     FaBullseye: FaBullseye,
     FaRegLightbulb: FaRegLightbulb,
   };
+   const icons = {
+      FaUsers: <FaUsers size={30} color="var(--color-custom)" />,
+      FaBookOpen: <FaBookOpen size={30} color="var(--color-custom)" />,
+      FaAward: <FaAward size={30} color="var(--color-custom)" />,
+      FaStar: <FaStar size={30} color="var(--color-custom)" />,
+    };
   const [cards, setCards] = useState([]);
   useEffect(() => {
     fetch(
@@ -79,9 +86,15 @@ const About = () => {
         })}
       </div>
       <div className={Styles.Achievements}>
+        <div className={Styles.textcontainer}>
+        <h2>Our Achievements</h2>
+        <p>Numbers that reflect our commitment to educational excellence and student success.</p>
+        </div>
+        <div className={Styles.Stats}>
+
         {stats.map((stat) => (
           <div className={Styles.statCard} key={stat.id}>
-            <div className={Styles.icon}>{iconMap[stat.icon]}</div>
+            <div className={Styles.icon}>{icons[stat.icon]}</div>
             <div className={Styles.data}>
               <h2>
                 <CountUp
@@ -96,6 +109,7 @@ const About = () => {
             </div>
           </div>
         ))}
+        </div>
       </div>
     </>
   );

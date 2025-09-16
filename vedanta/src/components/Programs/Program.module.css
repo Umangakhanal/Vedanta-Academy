@@ -40,9 +40,9 @@
   grid-template-columns: repeat(2, 500px); /* 2 cards per row */
   gap: 2.5rem; /* space between cards */
   padding: 1rem;
- margin: auto;
+  margin: auto;
 }
-.choose{
+.choose {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,21 +50,20 @@
   gap: 10px;
   background-color: var(--color-accent);
 }
-.choose h3{
+.choose h3, h4 {
   color: var(--color-primary);
 }
-.choose p{
+.choose p {
   color: var(--color-text);
 }
-.infoCardContainer{
-display: flex;
-width: 100%;
-justify-content: space-around;
-padding: 5px;
- background-color: var(--color-accent);
-
+.infoCardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5px;
+  background-color: var(--color-accent);
 }
-.infoCard{
+.infoCard {
   width: 200px;
   height: 200px;
   display: flex;
@@ -75,23 +74,23 @@ padding: 5px;
   gap: 10px;
   background-color: var(--color-accent);
 }
-.icon{
-width: 50px;
-height: 50px;
-border-radius: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.icon1{
+.icon1 {
   background-color: var(--color-primary);
 }
-.icon2{
+.icon2 {
   background-color: var(--color-secondary);
 }
-.icon3{
+.icon3 {
   background-color: green;
 }
-.icon4{
+.icon4 {
   background-color: purple;
 }

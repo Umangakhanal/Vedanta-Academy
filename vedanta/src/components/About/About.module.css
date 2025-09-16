@@ -5,7 +5,6 @@
   gap: 20px;
 }
 .textSide {
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -29,6 +28,8 @@
   padding: 20px;
   gap: 20px;
   justify-content: space-evenly;
+  height: 300px;
+  align-items: center;
 }
 .card {
   background-color: var(--color-custom);
@@ -42,16 +43,21 @@
   gap: 10px;
   text-align: justify;
   padding: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.text{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    color: var(--color-text);
+.card:hover{
+    transform: translateY(-10px); 
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px; 
 }
-.text h3{
-    color: var(--color-primary);
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  color: var(--color-text);
+}
+.text h3 {
+  color: var(--color-primary);
 }
 
 .iconCircle {
@@ -61,4 +67,49 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Achievements{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  background-color: var(--color-primary);
+  height: 300px;
+  flex-direction: column;
+  align-items: center;
+}
+.textcontainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-custom);
+  gap: 10px;
+}
+.Stats{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+.statCard{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  align-items: center;
+}
+.icon{
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-secondary);
+}
+.data{
+  color: var(--color-custom);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
