@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Our Vision",
     "content": "Our vision is to become the leading educational organization in Nepal, recognized for shaping confident, disciplined, and creative individuals through handwriting training and 21st Century Skills.",
-    "icon": "FaReLightbulb",
+    "icon": "FaRegLightbulb",
     "circleColor": "var(--color-secondary)",
     "iconColor": "var(--color-custom)"
   }
