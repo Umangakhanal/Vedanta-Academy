@@ -5,14 +5,14 @@
     "content": "Our mission is to empower students, teachers, and parents by nurturing handwriting excellence and equipping them with 21st Century Skills such as public speaking, creative writing, problem solving, and entrepreneurship.",
     "icon": "FaBullseye",
     "circleColor": "var(--color-bg)",
-    "iconColor": "var(--color-secondary)"
+    "iconColor": "var(--color-custom)"
   },
   {
     "id": 2,
     "title": "Our Vision",
     "content": "Our vision is to become the leading educational organization in Nepal, recognized for shaping confident, disciplined, and creative individuals through handwriting training and 21st Century Skills.",
     "icon": "FaLightbulb",
-    "circleColor": "var(--color-bg)",
-    "iconColor": "var(--color-secondary)"
+    "circleColor": "var(--color-secondary)",
+    "iconColor": "var(--color-custom)"
   }
 ]
