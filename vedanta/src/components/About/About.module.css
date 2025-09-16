@@ -1,28 +1,64 @@
-.heroContainer{
-    background-color: var(--color-primary);
-    display: flex;
-    padding: 20px;
-    gap: 20px;
+.heroContainer {
+  background-color: var(--color-primary);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
-.textSide{
-    /* border: 1px solid red; */
+.textSide {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+.textSide h1 {
+  color: var(--color-secondary);
+}
+.textSide p {
+  color: var(--color-custom);
+  text-align: justify;
+}
+.imageSide img {
+  width: 500px;
+  height: 400px;
+  border-radius: 10px;
+}
+.cardsContainer {
+  background-color: var(--color-accent);
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.card {
+  background-color: var(--color-custom);
+  width: 500px;
+  height: 220px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: justify;
+  padding: 5px;
+}
+.text{
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    gap: 10px;
+    align-items: center;
+    color: var(--color-text);
+}
+.text h3{
+    color: var(--color-primary);
+}
 
-}
-.textSide h1{
-    color: var(--color-secondary);
-}
-.textSide p{
-    color: var(--color-custom);
-    text-align: justify;
-}
-.imageSide{
-    border: 1px solid yellow;
-}
-.imageSide img{
-    width: 500px;
-    height: 400px;
+.iconCircle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

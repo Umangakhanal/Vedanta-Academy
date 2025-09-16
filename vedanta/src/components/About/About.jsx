@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Styles from "./About.module.css";
+import { FaBullseye, FaRegLightbulb } from "react-icons/fa6";
+import CountUp from "react-countup";
 
 const About = () => {
+  const iconMap = {
+    FaBullseye: FaBullseye,
+    FaRegLightbulb: FaRegLightbulb,
+  };
+  const [cards, setCards] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/master/MissionVision.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setCards(data))
+      .catch((err) => console.error(err));
+  }, []);
+  const [stats, setStats] = useState([]);
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/Umangakhanal/Vedanta-Academy/refs/heads/master/Stats.json"
+    )
+      .then((res) => res.json())
+      .then((data) => setStats(data));
+  }, []);
   return (
     <>
       <div className={Styles.heroContainer}>
@@ -33,6 +56,46 @@ const About = () => {
             alt="Vedanta Academy"
           />
         </div>
+      </div>
+      <div className={Styles.cardsContainer}>
+        {cards.map((item) => {
+          const IconComponent = iconMap[item.icon];
+          return (
+            <div key={item.id} className={Styles.card}>
+              <div
+                className={Styles.iconCircle}
+                style={{ backgroundColor: item.circleColor }}
+              >
+                <IconComponent color={item.iconColor} size={30} />
+              </div>
+              <div className={Styles.text}>
+                <h3>{item.title}</h3>
+                <p style={{ paddingLeft: 10, paddingRight: 10 }}>
+                  {item.content}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className={Styles.Achievements}>
+        {stats.map((stat) => (
+          <div className={Styles.statCard} key={stat.id}>
+            <div className={Styles.icon}>{iconMap[stat.icon]}</div>
+            <div className={Styles.data}>
+              <h2>
+                <CountUp
+                  end={stat.number}
+                  duration={2.5}
+                  enableScrollSpy
+                  scrollSpyOnce
+                />
+                {stat.suffix}
+              </h2>
+              <p>{stat.label}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </>
   );
