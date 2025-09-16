@@ -4,15 +4,15 @@ import Card from "../Card/Card";
 import {
   FaUserFriends,
   FaBullseye,
-  FaCheckCircle,
-  FaClock,
+  FaRegCheckCircle,
+  FaRegClock,
 } from "react-icons/fa";
 const Program = () => {
   const iconMap = [
-    { icon: <FaUserFriends size={30} />,  title: "Supportive Community", desc: "Learn in a friendly and collaborative environment." },
-    { icon: <FaBullseye size={30} />, title: "Focused Learning", desc: "Structured lessons designed for measurable results." },
-    { icon: <FaCheckCircle size={30} />,title: "Proven  Methods", desc: "Trusted teaching methods for skill-building." },
-    { icon: <FaClock size={30} />, title: "Flexible Schedule", desc: "Study at a pace that works for you."  },
+    { icon: <FaUserFriends size={30} color="var(--color-custom)"/>,  title: "Supportive Community", desc: "Learn in a friendly and collaborative environment." },
+    { icon: <FaBullseye size={30} color="var(--color-custom)" />, title: "Focused Learning", desc: "Structured lessons designed for measurable results." },
+    { icon: <FaRegCheckCircle size={30} color="var(--color-custom)"/>,title: "Proven  Methods", desc: "Trusted teaching methods for skill-building." },
+    { icon: <FaRegClock size={30} color="var(--color-custom)"/>, title: "Flexible Schedule", desc: "Study at a pace that works for you."  },
   ];
   const [programs, setPrograms] = useState([]);
   useEffect(() => {
