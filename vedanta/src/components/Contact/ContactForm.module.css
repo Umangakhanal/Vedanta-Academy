@@ -9,13 +9,16 @@ form {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   background-color: var(--color-custom);
 }
-h2{
+.title{
   color: var(--color-primary);
 }
-p , label , select, option{
+.contact{
   color: var(--color-text);
 }
-span{
+.formGroup p , label , select, option{
+  color: var(--color-text);
+}
+.formGroup span{
   color: red;
 }
 .infoContainer {
