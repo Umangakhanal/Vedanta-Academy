@@ -18,6 +18,9 @@
   gap: 30px;
   padding: 10px;
 }
+.textContainer p{
+  color: var(--color-custom);
+}
 .formpart{
   background-color: var(--color-accent);
   padding: 20px;
@@ -26,10 +29,13 @@
 }
 .contactForm{
   width: 60%;
-  border: 1px solid red ;
+  
 }
 .contactInfo{
   width: 35%;
-  border: 1px solid yellow;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   
 }

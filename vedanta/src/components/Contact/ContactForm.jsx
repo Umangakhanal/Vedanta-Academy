@@ -49,8 +49,8 @@ const ContactForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} style={{ maxWidth: "700px", margin: "auto" }}>
-      <h2>Send us a Message</h2>
-      <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+      <h2 className={Styles.title}>Send us a Message</h2>
+      <p className={Styles.contact}>Fill out the form below and we'll get back to you within 24 hours.</p>
       {/* Full Name and Email */}
       <div className={Styles.infoContainer}>
         <div className={Styles.formGroup}>

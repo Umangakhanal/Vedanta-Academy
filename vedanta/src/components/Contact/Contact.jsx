@@ -1,7 +1,8 @@
 import React from "react";
 import Styles from "./Contact.module.css";
 import ContactForm from "./ContactForm";
-import ContactCard from "./ContactCard";
+import ContactCard from "../Card/ContactCard";
+import QuickAction from "./QuickAction";
 
 const Contact = () => {
   return (
@@ -22,6 +23,7 @@ const Contact = () => {
         </div>
         <div className={Styles.contactInfo}>
             <ContactCard/>
+            <QuickAction/>
         </div>
       </div>
     </>

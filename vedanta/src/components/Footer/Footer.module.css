@@ -111,7 +111,7 @@
     /* font-size: 16px;
     font-weight: 300;
     font-family: Arial, Helvetica, sans-serif; */
-    color: var(--color-custom);
+    color: var(--color-custom) ;
     transition: 0.3s;
 }
 .bottom p:hover{
