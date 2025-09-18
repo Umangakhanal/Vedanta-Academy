@@ -52,9 +52,9 @@ const ContactForm = () => {
       <h2>Send us a Message</h2>
       <p>Fill out the form below and we'll get back to you within 24 hours.</p>
       {/* Full Name and Email */}
-      {/* <div className={Styles.formGroup}> */}
+      <div className={Styles.infoContainer}>
         <div className={Styles.formGroup}>
-          <label> Full Name *</label>
+          <label> Full Name <span>*</span></label>
           <input
             type="text"
             name="fullName"
@@ -65,7 +65,7 @@ const ContactForm = () => {
           {errors.fullName && <p style={{ color: "red" }}>{errors.fullName}</p>}
         </div>
         <div className={Styles.formGroup}>
-          <label> Email *</label>
+          <label> Email <span>*</span></label>
           <input
             type="email"
             name="email"
@@ -75,12 +75,12 @@ const ContactForm = () => {
           />
           {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
         </div>
-      {/* </div> */}
+      </div>
       {/* Phone and Program */}
 
-      {/* <div className={Styles.formGroup}> */}
+      <div className={Styles.infoContainer}>
         <div className={Styles.formGroup}>
-          <label> Phone Number *</label>
+          <label> Phone Number <span>*</span></label>
           <input
             type="text"
             name="phone"
@@ -91,7 +91,7 @@ const ContactForm = () => {
           {errors.phone && <p style={{ color: "red" }}>{errors.phone}</p>}
         </div>
         <div className={Styles.formGroup}>
-          <label> Program of Interest *</label>
+          <label> Program of Interest <span>*</span></label>
           <select
             name="program"
             value={formData.program}
@@ -106,11 +106,11 @@ const ContactForm = () => {
           </select>
           {errors.program && <p style={{ color: "red" }}>{errors.program}</p>}
         </div>
-      {/* </div> */}
+      </div>
 
       {/* Message */}
-      <div className={Styles.formGroup}>
-        <label> Message *</label>
+      <div className={Styles.message}>
+        <label> Message <span>*</span></label>
         <textarea
           name="message"
           rows={5}
