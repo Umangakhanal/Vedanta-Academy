@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./Contact.module.css";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -16,7 +17,7 @@ const Contact = () => {
       </div>
       <div className={Styles.formpart}>
         <div className={Styles.contactForm}>
-            
+            <ContactForm/>
         </div>
         <div className={Styles.contactInfo}>
             
