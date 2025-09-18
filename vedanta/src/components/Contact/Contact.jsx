@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./Contact.module.css";
 import ContactForm from "./ContactForm";
+import ContactCard from "./ContactCard";
 
 const Contact = () => {
   return (
@@ -20,7 +21,7 @@ const Contact = () => {
             <ContactForm/>
         </div>
         <div className={Styles.contactInfo}>
-            
+            <ContactCard/>
         </div>
       </div>
     </>
