@@ -21,6 +21,7 @@ form {
 .formGroup span{
   color: red;
 }
+
 .infoContainer {
   display: flex;
   justify-content: flex-start;
@@ -37,6 +38,9 @@ form {
   resize: vertical;
   min-height: 120px;
   max-height: 300px;
+}
+.message span{
+  color: red;
 }
 .input {
   width: 100%;

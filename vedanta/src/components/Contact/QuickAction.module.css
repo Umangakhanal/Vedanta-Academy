@@ -26,7 +26,8 @@
     
 }
 .container:hover{
-   background-color: rgb(201, 200, 200);
+   background-color:var(--color-bg);
+   color: var(--color-custom);
 }
 .actions a{
     text-decoration: none;

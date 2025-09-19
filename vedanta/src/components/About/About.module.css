@@ -36,7 +36,7 @@
   width: 500px;
   height: 220px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,9 +45,9 @@
   padding: 5px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.card:hover{
-    transform: translateY(-10px); 
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px; 
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 20px;
 }
 .text {
   display: flex;
@@ -68,7 +68,7 @@
   justify-content: center;
   align-items: center;
 }
-.Achievements{
+.Achievements {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -77,28 +77,30 @@
   flex-direction: column;
   align-items: center;
 }
-.textcontainer{
+.textcontainer {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: var(--color-custom);
   gap: 10px;
 }
-.Stats{
+.Stats {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
 }
-.statCard{
+.statCard {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 20px;
   align-items: center;
+  transition: 0.3s;
 }
-.icon{
-  
+.statCard:hover {
+  transform: scale(1.05);
+}
+.icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -107,7 +109,7 @@
   align-items: center;
   background-color: var(--color-secondary);
 }
-.data{
+.data {
   color: var(--color-custom);
   display: flex;
   flex-direction: column;
