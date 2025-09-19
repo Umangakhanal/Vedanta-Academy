@@ -52,6 +52,18 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
                 }
+                to="/gallery"
+              >
+                {" "}
+                Gallery{" "}
+              </NavLink>
+            </li>
+            <li>
+              {" "}
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? `${Styles.link} ${Styles.activeLink}` : Styles.link
+                }
                 to="/contact"
               >
                 {" "}
