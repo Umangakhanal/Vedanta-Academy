@@ -1,0 +1,50 @@
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* responsive columns */
+  grid-auto-rows: 150px; /* base row height */
+  gap: 16px;
+}
+
+.galleryItem {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.galleryItem:hover {
+  transform: scale(1.05);
+}
+
+/* This makes some images span more rows, creating the staggered pattern */
+.galleryItem:nth-child(5n + 1) {
+  grid-row: span 2;
+}
+
+.galleryItem:nth-child(5n + 3) {
+  grid-row: span 2;
+}
+
+/* Images fill their container */
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Title overlay */
+.galleryTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
