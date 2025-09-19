@@ -27,7 +27,7 @@ const Gallery = () => {
             onClick={() => openLightbox(index)}
           >
             <img
-              src={urlFor(img.image).width(400).url()}
+              src={urlFor(img.image).width(1200).url()}
               alt={img.title}
               className={Styles.galleryImage}
             />
